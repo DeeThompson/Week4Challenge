@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class HomeController {
 
 
-    @RequestMapping("/")
+    @RequestMapping("/Homepage")
     public String Homepage() {
         return "Homepage";
     }
@@ -27,6 +27,23 @@ public class HomeController {
     @RequestMapping("/AboutTheBootcamp")
     public String AboutTheBootcamp() {
         return "AboutTheBootcamp";
+
+    }
+
+    @RequestMapping("/github1")
+    public String github1() {
+        return "github1";
+
+    }
+
+    @RequestMapping("/github2")
+    public String github2() {
+        return "github2";
+    }
+
+    @RequestMapping("/")
+    public String Start() {
+        return "Homepage";
 
     }
 }
